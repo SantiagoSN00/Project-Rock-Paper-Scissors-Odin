@@ -12,24 +12,33 @@ function computerPlay(){
 function playRound(Player,Computer){
 
     console.log(Player,Computer);
-
+    // Check if it is a draw
     if(Player == Computer){
         return "It's a draw :T";
     }
+
+    // Check if you win
     else if(Player === "rock" && Computer === "scissors" || 
             Player === "scissors" && Computer === "paper"||
             Player === "paper" && Computer === "rock"){
                 return "You won! :D";
-            } else return "You lost! :(";
+            } 
+            
+    // Else you lose
+    else return "You lost! :(";
 }
 
 function playSets(){
+
+        // Checks for a valid input
         let player="";
         player = prompt("Enter the hand you want to play (\"Rock\",\"Paper\",\"Scissors\")")
         player = player.toLowerCase();
         while(player !== "rock" && player !=="paper" && player !=="scissors"){
-            player = prompt("Unvalid hand, please check for typing errors and try again")
+            player = prompt("Unvalid hand, please check for typing errors and try again (\"Rock\",\"Paper\",\"Scissors\")" )
             player = player.toLowerCase()
         }
+
+
         return(playRound(player,computerPlay()));
 }
