@@ -42,3 +42,6 @@ function playSets(){
 
         return(playRound(player,computerPlay()));
 }
+for(let i=0;i<5;i++){
+    alert(playSets())
+}
