@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    font-family: MedievalSharp,sans-serif;
+}
+html{
+    background-color: #5e3904c7;
+}
+body{
+    min-height: 60rem;
+    background-image: url(../resources/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0rem -18rem;
+}
+.title{
+    top:1rem;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    text-align:center;
+    position: relative;
+}
+.para-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    max-width: 70rem;
+}
+.images-container{
+    display:flex;
+}
+img {
+    width: 25rem;
+    height: 25rem;
+    border: 1px solid black
+}
+.para{
+    font-family: IBM Plex Sans Arabic;
+    font-size:3rem;
+}
+
